@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PRABA BIO-DATA</title>
+    <script src="https://kit.fontawesome.com/f1f73ef8a4.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(1689425928404_DSC_0049a.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    box-sizing: border-box;
+    background-size: 310px;
+    
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.container ul{
+    display: flex;
+    list-style: none;
+    margin: 30px;
+}
+
+.container ul li a{
+    text-decoration: none;
+    margin: 35px;
+    color: white;
+    font-family: Tahoma;
+    font-weight: 700;
+    position: relative;
+}
+
+.container ul li a::after{
+    content:'';
+    width: ;
+    height: 3px;
+    background-color: #80f134;
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 1s;
+}
+
+.container ul li a:hover::after{
+    width: 100%;
+}
+.container h1{
+    margin:15px;
+    font-weight:800;
+}
+
+.container h1 span{
+    color: rgb(240, 131, 131);
+    font-weight: 100;
+}
+
+.content{
+    margin: 120px 40px;
+    font-family:'Gill Sans' ;
+}
+
+.content h2{
+
+    letter-spacing: 1px;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 300 ;
+}
+
+.design span{
+    color: #fff;
+}
+
+.design{
+    color: blue;
+    font-size: 40px;
+    font-weight: 500;
+    width: 4ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #fff;
+    animation: typing 5s infinite;
+}
+
+@keyframes typing{
+    0%{
+        width: 4ch;
+    }
+    50%{
+        width: 25ch;
+    }
+}
+
+.content h1{
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(201, 221, 23);
+    font-weight: 700;
+}
+    
+.content p{
+    letter-spacing: 1px;
+    font-family:  Tahoma, sans-serif;
+    line-height: 22px;
+    font-weight: 10;
+}
+
+.second-space{
+    width: 100%;
+    height: min-content;
+    background-color:rgb(10, 165, 113);
+    color:black;
+}
+
+.second-space .about{
+    display: flex;
+    justify-content: center;
+    font-family: 'ubuntu';
+    font-weight: 500;
+    padding: 60px 0;
+    position: relative;
+}
+
+.second-space .about h1{
+    content: '';
+    width: 160px;
+    height: 3px;
+    border-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-bottom: 45px;
+    transform: translateX(-50%);
+}
+
+.about h1::after{
+    position: absolute;
+    font-size: 30px;
+    padding: 5px;
+    background-color:rgb(29, 29, 21);
+    bottom: -10px;
+    left: 50%;
+    margin-bottom: 70px;
+    transform: translateX(-50%);
+}
+
+.second-space img{
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    margin-left: 90px;
+    box-sizing: border-box;
+    padding: 45px;
+    transform: rotate(-12deg);
+    filter: drop-shadow(10px 10px 5px rgb(61 ,59,59));
+}
+
+.second-space img:hover{
+    filter: drop-shadow(15px 15px 7px rgba(55, 59, 32, 0.829));
+}
+
+.second-space .para{
+    margin-left: 50%;
+    font-family: 'poppins',sans-serif;
+    position: relative;
+}
+
+.second-space .para p{
+    display: block;
+    position: absolute;
+    font-family: comic sans MS;
+    bottom: -80px;
+    margin-bottom: 35%;
+    line-height: 27px;
+    text-align: justify;
+    margin-right: 70px;
+    letter-spacing: 0.4px;
+}
+
+.second-space .para h2{
+    color: #2d5e0d;
+    letter-spacing: 1px;
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    margin-bottom: 72%;
+    font-weight: 160;
+    padding: 10px 0;
+}
+
+.my-skill{
+    width: 100%;
+    height: min-content;
+    background-color: #fff;
+    color: black;
+    padding: 22px 0;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue';
+    position: relative;
+}
+
+.cont h1{
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 500;
+    padding: 70px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.my-skill .cont h1::before{
+    content: '';
+    width: 350px;
+    height: 3px;
+    background-color: rgb(121, 7, 7);
+    position:absolute;
+    bottom: 0px;
+    left: 39%;
+    margin-bottom: 45px;
+    transform: translateX(-50&);
+}
+
+.cont h1::after{
+    content: 'What I Know';
+    width: max-content;
+    color: #2d5e0d;
+    position: absolute;
+    background-color: #fff;
+    bottom: -13px;
+    left: 45%;
+    margin-bottom: 45px;
+    transform: translateX(-50&);
+}
+
+.my-skill .para1{
+    width: calc(50% -30px);
+    font-family: 'poppins',sans-serif;
+    margin-left: 50px;
+    padding: 40px;
+    text-align: justify;
+    line-height: 30px;
+    position: relative;
+}
+
+.my-skill .para1 .para2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.my-skill a{
+    margin: 0 90px;
+    background-color: #2d5e0d;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #2d5e0d;
+    font-weight: 550;
+}
+
+.my-skill a:hover{
+    color: #2d5e0d;
+    background: none;
+    font-weight: 580;
+}
+
+.my-skill .para1 p{
+    font-size: 18px;
+    letter-spacing: 0.5;
+    font-weight: 580;
+}
+
+.column{
+    height: 550px;
+    background-color: #fff;
+    width: 550px;
+    margin-top: 150px;
+    margin-left: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.bar .info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 30px;
+    padding: px;
+    position: relative;
+}
+
+.bar .info span{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.column .bar .line{
+    height: 8px;
+    width: 95%;
+    background-color: rgb(168, 36, 36);
+    padding: 2px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.column .bar .line::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    background-color: blue;
+}
+
+.column .bar .HTML::before{
+    width: 95%;
+}
+.column .bar .CSS::before{
+    width:85% ;
+}
+.column .bar .JAVA script::before{
+    width:60% ;
+}
+.column .bar .JAVA::before{
+    width:70% ;
+}
+.column .bar .PYTHON::before{
+    width:55% ;
+}
+.column .bar .C::before{
+    width:50% ;
+}
+
+.cont .tittle::after{
+    content: 'What I Did';
+    left:45% ;
+    background-color:#62eb07;
+}
+
+.cont .tittle::before{
+    content: '';
+    width: 250px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom:0px ;
+    left: 50%;
+    margin-bottom: 45px;
+    transform: translateX(-50%);
+}
+
+.my-work{
+    width: 100%;
+    height: min-content;
+    background-color: #62eb07;
+    padding: 20px 0;
+    font-family:'poppins',sans-serif ;
+}
+
+.content1 .image img{
+    width: 350px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.content1 .image{
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    margin-left: 60px;
+    transition: transform 0.5s ease;
+}
+
+.content1 .image .layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.69),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 17px;
+    transition: height 0.5s ease;
+}
+
+.image .layer a{
+    margin-top: 20px;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: antiquewhite;
+    color: #2d5e0d;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.content1 .image h3{
+    padding: 30px;
+    font-weight: 500;
+}
+
+.content1 .image:hover{
+    transform: scale(1.05);
+}
+
+.content1 :hover .layer{
+    height: 100%;
+}
+
+.contact{
+    width: 100%;
+    height: min-content;
+    background-color: rgb(60, 121, 235);
+    color: rgb(14, 12, 12);
+    padding: 12px 40px;
+    font-family: 'poppins',sans-serif;
+    position: relative;
+}
+
+.contact .cont h1::after{
+    content: 'get in touch';
+    width: max-content;
+    color: red;
+    position: absolute;
+    font-size: 20px;
+    padding: 5px;
+    background-color:rgb(60, 121, 235);
+    bottom: -13px;
+    left: 50%;
+    margin-bottom: 45px;
+    transform: translateX(-50%);
+}
+
+.contact .cont h1::before{
+    content: '';
+    width: 160px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-bottom: 45px;
+    transform: translateX(-50%);
+}
+
+.contact .line1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: rgb(60, 121, 235);
+}
+.my-contact .row{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.my-contact .row .infor{
+    margin-left: 30px;
+}
+
+.my-contact .row i{
+    font-size: 18px;
+    color: red;
+}
+
+.my-contact .row .title5{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.my-contact .row .sub-title{
+    font-weight: 500;
+    color: black;
+}
+.social-media{
+    text-decoration: none;
+    font-size: 35px;
+}
+.social-media i{
+    padding: 15px;
+    color: #62eb07;
+    filter: drop-shadow(4px 4px 10px #000);
+    transition: transform 0.4s ease;
+}
+.social-media i:hover{
+    transform: translate(-5px,-4px);
+}
+.social-media .face:hover{
+    color: #1877F2;
+}
+.social-media .insta:hover{
+    color:red ;
+}
+.social-media .twitter:hover{
+    color: #00acee;
+}
+footer{
+    font-family: 'poppins',sans-serif;
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    color: #fff;
+    letter-spacing: 1px;
+}
+a,i{
+    text-decoration: none;
+    color: red;
+}
+</style>
+<body>
+    <div id="header" >
+        <div class="container">
+            <h1>PRABAHARAN <span>S</span></h1>
+            <ul>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#second-space">ABOUT</a></li>
+                <li><a href="#my-skill">SKILL</a></li>
+                <li><a href="#my-work">WEBSITE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+           <h2>Hello, It's me</h2>
+           <h1>PRABAHARAN S</h1>
+           <h2 class="design"><span>I'm a </span>Frontend Developer</h2>
+           <p>
+             <b>My Name Is PRABAHARAN.S , <br>I Am Studying Computer Science And Engineering Batch For (2021-2025).<br>I Am Currently Study For 3<sup>rd</sup>Year In Mahendra Institute Of Technology,Namkkal,Tamilnadu.<br>I Know The Programming Language </b><B>HTML,CSS,JAVASCRIPT,JAVA,PYTHON,C++ </B><b>In Online Course </b><br><b>I Know Language</b><li><b>tamil</b></li><li><b>English</b><li><b>Malayalam</b></li><li><b>Japanese-N5(intermediate)</b></li>  
+           </p>
+        </div>
+    </div>
+<div class="second-space" id="second-space">
+<div class="about"><h1>ABOUT-MYSELF</h1></div>
+<img src="desktop-wallpaper-97-aesthetic-best-profile-pic-for-instagram-for-boy-instagram-dp-boys.jpg" alt="">
+<div class="para">
+    <h2>I'm Prabaharan And I'm A Frontend Developer</h2>
+    <p> Son  Of  G.Saminathan,My Mother Name Is S.Rathnadevi.<br>I Have One Elder Brother,He Name Is S.Gopinath Study M.SC At London.<br> My Date.Of.Birth(16.10.2003) And Blood Group Is (O+),<br> My Fav Colour Is Blue And Fav Num Is(5) .<br>I'm Complete Secondary School With(73% per) At Arunodhaya Higher Secondary School,Pattukkottai And I Complete Higher Secondary School In ComputerScience With (78% per) At Laurel Higher Secondary School,Pattukkottai.<br> My Native Place At Athikkottai,Pattukkottai,Thanjavur .<br> My Hobbies Is Listen Song And Sports(Volleyball,Handball,Athletics) And Bike Riding. </p>
+</div>
+</div>
+
+<div class="my-skill" id="my-skill">
+    <div class="cont"><h1>My Skill</h1></div>
+    <div class="para1">
+        <div class="para2">My Skill Creative & Exprience</div>
+        <p><b>HTML</b><li>Writing Semantic</li><li>SEO Basics</li><li>Forms And Validations</li><b>CSS</b><li>Responsive Web</li><li>Preprocessors(Sass)</li><li>Framework(Bootstrap)</li><li>Dive Deep CSS3</li><li>Methodologies(BEM)</li><b>Java Script</b><li>Task Runner(Guip,Npm Scripts)</li><li>Package Manager(Yarn)</li><li>Framework(React.Js(Flux,Redux),Angular.Js)</li><li>Bunbdler(Webpack)</li><b>JAVA</b><li>Interface</li><li>Oops Concept</li><li>Package</li><li>Loops</li><li>Data Types</li><li>Variables</li><li>Strings</li><B>PYTHON</B><li>Oop(Variables,Classes)</li><li>DataStructure(Arrays And Linked Lists)</li><li>Exception</li><b>C</b><li>Basic Operation</li><li>Data Types</li><li>Structures And Classes</li><li>Exception Handling</li></p>
+    </div>
+    <div class="column">
+        <div class="bar">
+            <div class="info">
+                <span>HTML</span>
+                <span>90%</span>
+            </div>
+            <div class="line HTML"></div>
+    </div>
+        <div class="bar">
+            <div class="info">
+                <span>CSS</span>
+                <span>85%</span>
+            </div>
+            <div class="line CSS"></div>
+    </div>
+    <div class="bar">
+        <div class="info">
+            <span>JAVA SCRIPT</span>
+            <span>60%</span>
+        </div>
+        <div class="line JAVA SCRIPT"></div>
+    </div>
+    <div class="bar">
+        <div class="info">
+            <span>JAVA</span>
+            <span>70%</span>
+        </div>
+        <div class="line JAVA"></div>
+    </div>
+    <div class="bar">
+    <div class="info">
+        <span>PYTHON</span>
+        <span>55%</span>
+       </div>
+       <div class="line PYTHON"></div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>C</span>
+        <span>50%</span>
+       </div>
+       <div class="line C"></div>
+    </div>
+</div>
+</div>
+
+<DIV class="my-work" id="my-work">
+    <div class="cont"><h1 class="tittle">My WORK</h1></div>
+    <div class="content1">
+    <div class="image">
+        <img src="calci.jpg">
+        <div class="layer"><h3>SIMPLE CALCULATOR</h3>
+            <p>Use HTML,CSS And JAVASCRIPT...</p>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fprabaharan-saminathan.github.io%2Fprabacalci%2Fpraba.html&e=AT1fKCd5k2giHYTe7pD400ZdKMGzV5hIRrKGvECZ6IgGzG3pmRzYaShuainOaNWStpjNK-OhhTzuuipR-xE_Ab53kEVVzZ1N1ZXRPwlVBlD248gHgaWet4CUdalyZYn9ajGl_UunWd2M1mUbCl1SnMyCBk2wPSYufZdG-A"><i class="fa-duotone fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="loginpage-1.jpg">
+        <div class="layer"><h3>LOGIN PAGE-1</h3>
+            <p>Use Only HTML,CSS...</p>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fprabaharan-saminathan.github.io%2Fprabaharansweb%2F&e=AT1fKCd5k2giHYTe7pD400ZdKMGzV5hIRrKGvECZ6IgGzG3pmRzYaShuainOaNWStpjNK-OhhTzuuipR-xE_Ab53kEVVzZ1N1ZXRPwlVBlD248gHgaWet4CUdalyZYn9ajGl_UunWd2M1mUbCl1SnMyCBk2wPSYufZdG-A"><i class="fa-duotone fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="loginpage-2.jpg">
+        <div class="layer"><h3>LOGIN PAGE-2</h3>
+            <p>Use Only HTML,CSS...</p>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fprabaharan-saminathan.github.io%2Fwebmaster-prabha%2F&e=AT1fKCd5k2giHYTe7pD400ZdKMGzV5hIRrKGvECZ6IgGzG3pmRzYaShuainOaNWStpjNK-OhhTzuuipR-xE_Ab53kEVVzZ1N1ZXRPwlVBlD248gHgaWet4CUdalyZYn9ajGl_UunWd2M1mUbCl1SnMyCBk2wPSYufZdG-A"><i class="fa-duotone fa-arrow-up-right-from-square"></i></a>
+        </div>
+        </div>
+    </div>
+
+</DIV>
+
+<div class="contact" id="contact">
+    <div class="cont"><h1 class="title">contact Me</h1></div>
+   
+
+    <div class="my-contact">
+    <div class="row">
+        <div class="icon"><i class="fa-solid fa-user"></i></div>
+        <div class="infor">
+        <div class="title5">Name</div>
+        <div class="sub-title">PRABAHARAN S</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="icon"><i class="fa-solid fa-address-book"></i></div>
+        <div class="infor">
+        <div class="title5">Address</div>
+        <div class="sub-title">Athikkottai,Pattukkottai,Thanjavur-614906</div>   
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="icon"><i class="fa-solid fa-mobile"></i></div>
+        <div class="infor">
+        <div class="title5">Mobile.no</div>
+        <div class="sub-title">+91-7868901457</div>   
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="infor">
+        <div class="title5">Email</div>
+        <div class="sub-title">gopiguhans1999@gmail.com</div>   
+        </div>
+    </div>
+
+    <div class="social-media">
+        <a class="insta" href="https://instagram.com/_poppi_praba_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-square-instagram"></i></i></a>
+        <a class="lin" href="https://l.instagram.com/?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fprabaharan-s-764669267&e=AT0uRpfAdjBOoUpY7n8mckfUYIjegTekOwfxN1vjecTJ5Z8uwa6VChcIKaEfYDbh9jN6VFhASdVRDeVw5fwbb_CpWPbFSkteXujHoOaDbMOI4fkoFhF1S4G2I8P41lQipQC9meRaywt9Pl52vEE6obXCoEBdRmpW_oCUQA"><i class="fa-brands fa-linkedin"></i></a>
+        <a class="twitter" href="https://l.instagram.com/?u=https%3A%2F%2Ftwitter.com%2FPRABAHA2003%3Ft%3D9s4qG-nRXnREqLLokf6kJg%26s%3D09&e=AT0uRpfAdjBOoUpY7n8mckfUYIjegTekOwfxN1vjecTJ5Z8uwa6VChcIKaEfYDbh9jN6VFhASdVRDeVw5fwbb_CpWPbFSkteXujHoOaDbMOI4fkoFhF1S4G2I8P41lQipQC9meRaywt9Pl52vEE6obXCoEBdRmpW_oCUQA"><i class="fa-brands fa-square-x-twitter"></i></a>
+    </div>
+</div>
+<footer>
+    <span>CREATED BY<a href="">PRABAHAARAN</a> | <span class="c"><i class="fa-regular fa-copyright"></i></span>2023 ALL RIGHTS RESERVED</span>
+</footer>
+</div>
+</body>
+</html>
